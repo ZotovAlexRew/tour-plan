@@ -1,0 +1,15 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Mulish', sans-serif;
+  color: #333333;
+}
+
+.container {
+  max-width: 1110px;
+  margin: auto;
+}
+/*# sourceMappingURL=sryle.css.map */
