@@ -21,10 +21,10 @@
   .search
     &__input
       width: 340px
-@media ( max-width: 768px )
+@media ( max-width: 767px )
   .container
     max-width: 576px
-    width: 92%
+    width: 81%
   .navbar
     &__search, &-menu, &__uzer
       display: none
@@ -45,5 +45,11 @@
         height: 1px
         background-color: $text-color
 @media ( max-width: 576px )
-  .logo
-    width: 99px
+  .container
+    .logo
+      width: 99px
+  .navbar
+    &-top
+      padding-top: 28px
+      padding-bottom: 28px
+    &__search
