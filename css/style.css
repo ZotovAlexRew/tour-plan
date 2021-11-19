@@ -559,6 +559,7 @@ template {
 .stars {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+  max-height: 10px;
 }
 
 .offer {
@@ -587,6 +588,10 @@ template {
 .rating__counter {
   font-size: 14px;
   line-height: 18px;
+}
+
+.five {
+  font-size: 9px;
 }
 
 @media (max-width: 1200px) {
@@ -659,6 +664,9 @@ template {
   .stars {
     -ms-flex-preferred-size: auto;
         flex-basis: auto;
+  }
+  .hotel {
+    padding-top: 0;
   }
   .hotel-name {
     -ms-flex-preferred-size: 100%;
