@@ -625,7 +625,7 @@ template {
 @media (max-width: 767px) {
   .container {
     max-width: 576px;
-    width: 81%;
+    width: 87%;
   }
   .navbar__search, .navbar-menu, .navbar__uzer {
     display: none;
