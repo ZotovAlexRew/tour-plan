@@ -1233,8 +1233,17 @@ template {
     width: 339px;
     height: 255px;
   }
-  .card__title {
+  .card__title--1 {
     width: 145px;
+  }
+  .card__title--2 {
+    width: 153px;
+  }
+  .card__title--3 {
+    width: 161px;
+  }
+  .card__title--4 {
+    width: 200px;
   }
 }
 
@@ -1392,8 +1401,14 @@ template {
     width: 49%;
     height: 255px;
   }
+  .card__title--1 {
+    width: 145px;
+  }
+  .card__title--2 {
+    width: 153px;
+  }
   .card__title--3 {
-    width: 180px;
+    width: 161px;
   }
   .card__title--4 {
     width: 200px;
