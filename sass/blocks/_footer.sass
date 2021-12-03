@@ -62,7 +62,7 @@
     line-height: 160%
     color: $footer-text-color
     &--mb-2
-      margin-bottom: 20px
+      margin-bottom: 10px
   &__icon
     &-wrapper
       min-width: 40px
@@ -85,7 +85,7 @@
     height: 50px
     margin-bottom: 15px
     flex-basis: 47%
-    font-size: 10px
+    font-size: 12px
   &__message
     background-color: #fff
     border-radius: 4px
@@ -95,7 +95,7 @@
     height: 122px
     resize: none
     margin-bottom: 23px
-    font-size: 10px
+    font-size: 12px
   &__button
     min-width: 160px
     min-height: 50px
@@ -129,9 +129,10 @@
       margin-top: 73px
   &-rulses
     &__link
-      margin-right: 10px
       text-decoration: none
       color: $footer-text-color
       font-size: 12px
       font-weight: normal
       font-style: normal
+    &__link:not(:last-child)
+      margin-right: 10px
