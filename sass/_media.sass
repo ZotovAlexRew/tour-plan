@@ -89,9 +89,10 @@
       &--4
         width: 200px
   .footer
+    padding-top: 73px
     &-wrapper
       grid-template-columns: repeat(6, 1fr)
-      grid-row-gap: 40px
+      grid-row-gap: 30px
     &__input
       flex-basis: 49%
     &__logo
@@ -101,7 +102,6 @@
       height: 120px
     &__social
       &-network
-        margin-top: -25px
         margin-left: -50px
         grid-row: 1 / 2
         grid-column: span 4
@@ -306,6 +306,12 @@
       flex-basis: 100%
     &__additional
       margin-left: 20px
+    &__contact
+      &-deteils
+        margin-top: 10px
+    &__contacts
+      &-form
+        margin-top: 30px
 @media ( max-width: 576px )
   .container
     .logo
@@ -400,7 +406,6 @@
         grid-row: 7
         grid-column: 1
         width: 100%
-        margin-top: 10px
     &__button
       font-size: 12px
       order: 1
@@ -409,17 +414,20 @@
     &__message
       margin-bottom: 14px
       width: 281px
+      min-height: 123px
     &__rulses
       &-links
         grid-row: 8
         grid-column: 1
         margin-left: 0
         padding-left: 0
+        margin: 0
       &-image
         grid-row: 9
         grid-column: 1
         justify-self: start
-        margin-top: -20px
+        margin-left: 0
+        margin-top: -40px
     &-rulses
       &__link
         font-style: normal
