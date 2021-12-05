@@ -226,7 +226,9 @@
                 </a>
               </div>
               <!-- /.call-center -->
-              <button class="button booking__button">View Other Options</button>
+              <button data-toggle="model" class="button booking__button">
+                View Other Options
+              </button>
             </div>
             <!-- /.booking -->
             <div class="map">
@@ -599,7 +601,7 @@
                 name="phone"
               />
               <textarea
-                class="footer__message"
+                class="message footer__message"
                 placeholder="Message"
                 name="message"
               ></textarea>
@@ -622,6 +624,45 @@
       <!-- /.container -->
     </footer>
     <!-- /.footer -->
+    <div class="model">
+      <div class="model__overlay"></div>
+      <!-- /.model__overlay -->
+      <div class="model__dialog">
+        <a href="#" class="model__close">
+          <img src="image/close.svg" alt="icon: close" />
+        </a>
+        <h3 class="model__title model__title--mb-3">Booking</h3>
+        <form action="send.php" method="post" class="model__form">
+          <input
+            type="text"
+            class="input model__input"
+            placeholder="Your Full Name*"
+            name="name"
+          />
+          <input
+            type="text"
+            class="input model__input"
+            placeholder="Phone Number*"
+            name="phone"
+          />
+          <input
+            type="text"
+            class="input model__input"
+            placeholder="Email*"
+            name="phone"
+          />
+          <textarea
+            class="message model__message"
+            placeholder="Message"
+            name="message"
+          ></textarea>
+          <button class="button model__button" type="submit">Send</button>
+          <span class="model__info">* Required Fields</span>
+        </form>
+      </div>
+      <!-- /.model__dialog -->
+    </div>
+    <!-- /.model -->
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/parallax.js"></script>
