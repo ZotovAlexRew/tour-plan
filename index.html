@@ -587,19 +587,25 @@
           <!-- /.footer__contact-deteils -->
           <div class="footer__contacts-form">
             <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
-            <form action="send.php" method="post" class="footer__form">
-              <input
-                type="text"
-                class="input footer__input"
-                placeholder="Your Full Name*"
-                name="name"
-              />
-              <input
-                type="text"
-                class="input footer__input"
-                placeholder="Phone Number*"
-                name="phone"
-              />
+            <form action="send.php" method="post" class="footer__form form">
+              <div class="footer__input-group">
+                <input
+                  type="text"
+                  class="input footer__input"
+                  placeholder="Your Full Name*"
+                  name="name"
+                  required
+                />
+              </div>
+              <div class="footer__input-group">
+                <input
+                  type="text"
+                  class="input footer__input"
+                  placeholder="Phone Number*"
+                  name="phone"
+                  required
+                />
+              </div>
               <textarea
                 class="message footer__message"
                 placeholder="Message"
@@ -632,24 +638,28 @@
           <img src="image/close.svg" alt="icon: close" />
         </a>
         <h3 class="model__title model__title--mb-3">Booking</h3>
-        <form action="send.php" method="post" class="model__form">
+        <form action="send.php" method="post" class="model__form form">
           <input
             type="text"
             class="input model__input"
             placeholder="Your Full Name*"
             name="name"
+            required
+            minlength="2"
           />
           <input
-            type="text"
             class="input model__input"
             placeholder="Phone Number*"
             name="phone"
+            required
+            type="tel"
           />
           <input
-            type="text"
             class="input model__input"
             placeholder="Email*"
-            name="phone"
+            name="email "
+            required
+            type="email"
           />
           <textarea
             class="message model__message"
@@ -665,6 +675,7 @@
     <!-- /.model -->
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/parallax.js"></script>
     <script src="js/main.js"></script>
   </body>
