@@ -412,7 +412,7 @@
             <h3 class="card__title card__title--1">
               The curious corner of chamarel
             </h3>
-            <button class="card__button">Book Now</button>
+            <button data-toggle="model" class="card__button">Book Now</button>
           </div>
           <!--/.card-->
           <div class="card activities__card activities__card--2">
@@ -424,7 +424,7 @@
             <h3 class="card__title card__title--2">
               Gymkhana club golf course
             </h3>
-            <button class="card__button">Book Now</button>
+            <button data-toggle="model" class="card__button">Book Now</button>
           </div>
           <!--/.card-->
           <div class="card activities__card activities__card--3">
@@ -436,7 +436,7 @@
             <h3 class="card__title card__title--3">
               Tamarind falls hiking trip - full day
             </h3>
-            <button class="card__button">Book Now</button>
+            <button data-toggle="model" class="card__button">Book Now</button>
           </div>
           <!--/.card-->
           <div class="card activities__card activities__card--4">
@@ -448,7 +448,7 @@
             <h3 class="card__title card__title--4">
               The blue marine discovery quest
             </h3>
-            <button class="card__button">Book Now</button>
+            <button data-toggle="model" class="card__button">Book Now</button>
           </div>
           <!--/.card-->
         </div>
@@ -600,6 +600,7 @@
               <div class="footer__input-group">
                 <input
                   type="text"
+                  id="phone1"
                   class="input footer__input"
                   placeholder="Phone Number*"
                   name="phone"
@@ -648,11 +649,12 @@
             minlength="2"
           />
           <input
+            type="text"
+            id="phone"
             class="input model__input"
             placeholder="Phone Number*"
             name="phone"
             required
-            type="tel"
           />
           <input
             class="input model__input"
@@ -676,6 +678,7 @@
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
     <script src="js/parallax.js"></script>
     <script src="js/main.js"></script>
   </body>
