@@ -74,9 +74,9 @@ $(document).ready(function (){
         },
         email: {
           required: "We need your email address",
-          email: "Your email address must be in the format of name@domain.com"
+          email: "Your email address must be in the format of name@domain.com",
         },
-        phone:{
+        phone: {
           required: "We need your phone number",
         },
       },
@@ -87,4 +87,5 @@ $(document).ready(function (){
     $("#phone").mask("+7(000)000-00-00");
     $("#phone1").mask("+7(000)000-00-00");
   });
-});
+   AOS.init();
+  });

@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -262,13 +263,14 @@
         <form
           action="subscribe.php"
           method="post"
-          class="subscribe newsletter__subscribe"
+          class="subscribe newsletter__subscribe form"
         >
           <input
             type="text"
-            class="subscribe__input"
+            class="input subscribe__input"
             placeholder="Your email address"
             name="email"
+            required
           />
           <button class="subscribe__button">Send</button>
         </form>
@@ -278,7 +280,11 @@
     <section class="reviews">
       <div class="container">
         <h2 class="reviews__title">What people think about us</h2>
-        <div class="swiper reviews-slider">
+        <div
+          class="swiper reviews-slider"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="reviews-slider__item">
@@ -403,7 +409,11 @@
       <div class="container">
         <h2 class="activities-title">Other Activities</h2>
         <div class="activities-wrapper">
-          <div class="card activities__card activities__card--1">
+          <div
+            class="card activities__card activities__card--1"
+            data-aos="fade-right"
+            data-aos-delay="100"
+          >
             <img
               src="image/card1.jpg"
               alt="The curious corner of chamarel"
@@ -415,7 +425,11 @@
             <button data-toggle="model" class="card__button">Book Now</button>
           </div>
           <!--/.card-->
-          <div class="card activities__card activities__card--2">
+          <div
+            class="card activities__card activities__card--2"
+            data-aos="fade-right"
+            data-aos-delay="200"
+          >
             <img
               src="image/card2.jpg"
               alt="Gymkhana club golf course"
@@ -427,7 +441,11 @@
             <button data-toggle="model" class="card__button">Book Now</button>
           </div>
           <!--/.card-->
-          <div class="card activities__card activities__card--3">
+          <div
+            class="card activities__card activities__card--3"
+            data-aos="fade-right"
+            data-aos-delay="300"
+          >
             <img
               src="image/card3.jpg"
               alt="Tamarind falls hiking trip - full day"
@@ -439,7 +457,11 @@
             <button data-toggle="model" class="card__button">Book Now</button>
           </div>
           <!--/.card-->
-          <div class="card activities__card activities__card--4">
+          <div
+            class="card activities__card activities__card--4"
+            data-aos="fade-right"
+            data-aos-delay="400"
+          >
             <img
               src="image/card4.jpg"
               alt="The blue marine discovery quest"
@@ -595,6 +617,7 @@
                   placeholder="Your Full Name*"
                   name="name"
                   required
+                  minlength="2"
                 />
               </div>
               <div class="footer__input-group">
@@ -657,11 +680,11 @@
             required
           />
           <input
+            type="text"
             class="input model__input"
             placeholder="Email*"
-            name="email "
+            name="email"
             required
-            type="email"
           />
           <textarea
             class="message model__message"
@@ -680,6 +703,7 @@
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
     <script src="js/parallax.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
