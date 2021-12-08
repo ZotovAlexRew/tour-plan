@@ -26,13 +26,6 @@ img {
   height: 50px;
 }
 
-.message {
-  background-color: #fff;
-  border-radius: 4px;
-  padding: 18px 23px;
-  border: none;
-}
-
 .button {
   min-width: 160px;
   min-height: 50px;
@@ -57,12 +50,10 @@ label.invalid {
 
 .invalid {
   color: #EC1F46;
-  border-bottom: 1px solid #EC1F46;
 }
 
 .inval {
   color: #EC1F46;
-  border-bottom: 1px solid #EC1F46;
 }
 
 .comeback {
@@ -1379,6 +1370,10 @@ template {
   resize: none;
   margin-bottom: 23px;
   font-size: 12px;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 18px 23px;
+  border: none;
 }
 
 .footer__info {

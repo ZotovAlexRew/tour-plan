@@ -67,6 +67,20 @@ $(document).ready(function (){
   $(".madel__form").each(function() {
     $(this).validate({
       errorClass: "inval",
+      rules: {
+        name: {
+          required: true,
+          minlength: 2,
+        },
+        email: {
+          required: true,
+          email: true,
+        },
+        phone: {
+          minlength: 16,
+        },
+      },
+      
       messages: {
         name: {
           required: "Please specify your name",
@@ -86,6 +100,20 @@ $(document).ready(function (){
   $(".footer__form").each(function() {
     $(this).validate({
       errorClass: "inval",
+      rules: {
+        name: {
+          required: true,
+          minlength: 2,
+        },
+        email: {
+          required: true,
+          email: true,
+        },
+        phone: {
+          minlength: 16,
+        },
+      },
+
       messages: {
         name: {
           required: "Please specify your name",
@@ -97,6 +125,7 @@ $(document).ready(function (){
         },
         phone: {
           required: "We need your phone number",
+          minlength= "16"
         },
       },
     });
