@@ -80,7 +80,6 @@ $(document).ready(function (){
           minlength: 16,
         },
       },
-      
       messages: {
         name: {
           required: "Please specify your name",
@@ -96,7 +95,6 @@ $(document).ready(function (){
       },
     });
   })
-
   $(".footer__form").each(function() {
     $(this).validate({
       errorClass: "inval",
@@ -113,7 +111,6 @@ $(document).ready(function (){
           minlength: 16,
         },
       },
-
       messages: {
         name: {
           required: "Please specify your name",
@@ -125,12 +122,10 @@ $(document).ready(function (){
         },
         phone: {
           required: "We need your phone number",
-          minlength= "16"
         },
       },
     });
   })
-
   $(".form").each(function() {
     $(this).validate({
       errorClass: "invalid",
@@ -149,7 +144,6 @@ $(document).ready(function (){
       },
     });
   })
-
   $(document).ready(function(){
     $("#phone").mask("+7(000)000-00-00");
     $("#phone1").mask("+7(000)000-00-00");
