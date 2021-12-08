@@ -48,7 +48,19 @@ img {
   border-radius: 4px;
 }
 
+label.invalid {
+  position: relative;
+  left: 0;
+  top: 55px;
+  overflow: visible;
+}
+
 .invalid {
+  color: #EC1F46;
+  border-bottom: 1px solid #EC1F46;
+}
+
+.inval {
   color: #EC1F46;
   border-bottom: 1px solid #EC1F46;
 }
@@ -895,7 +907,16 @@ template {
   margin: auto;
 }
 
+.newsletter__form {
+  position: relative;
+  margin-top: 30px;
+  width: 350px;
+  min-height: 55px;
+  border-radius: 4px;
+}
+
 .newsletter-title {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -913,6 +934,7 @@ template {
 }
 
 .newsletter-title__strong {
+  display: block;
   font-size: 36px;
   line-height: 45px;
   text-transform: uppercase;
@@ -923,7 +945,6 @@ template {
   width: 350px;
   height: 55px;
   border-radius: 4px;
-  overflow: hidden;
 }
 
 .subscribe__input {
@@ -937,6 +958,7 @@ template {
   font-weight: 300;
   font-size: 14px;
   line-height: 18px;
+  border-radius: 5px;
 }
 
 .subscribe__button {
@@ -952,6 +974,7 @@ template {
   line-height: 15px;
   background-color: #EC1F46;
   color: #ffffff;
+  border-radius: 0 5px 5px 0;
 }
 
 .reviews {
@@ -1341,6 +1364,8 @@ template {
 }
 
 .footer__input-group {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
   margin-bottom: 15px;
   -ms-flex-preferred-size: 47%;
       flex-basis: 47%;

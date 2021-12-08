@@ -18,7 +18,14 @@
     justify-content: space-between
     max-width: 731px
     margin: auto
+  &__form
+    position: relative
+    margin-top: 30px
+    width: 350px
+    min-height: 55px
+    border-radius: 4px
   &-title
+    position: relative
     display: flex
     flex-direction: column
     color: $white
@@ -29,6 +36,7 @@
     margin-top: 0
     margin-bottom: 0
     &__strong
+      display: block
       font-size: 36px
       line-height: 45px
       text-transform: uppercase
@@ -37,7 +45,6 @@
   width: 350px
   height: 55px
   border-radius: 4px
-  overflow: hidden
   &__input
     position: absolute
     width: 100%
@@ -49,6 +56,7 @@
     font-weight: 300
     font-size: 14px
     line-height: 18px
+    border-radius: 5px
   &__button
     position: absolute
     min-width: 65px
@@ -62,3 +70,4 @@
     line-height: 15px
     background-color: $primary
     color: $white
+    border-radius: 0 5px 5px 0
