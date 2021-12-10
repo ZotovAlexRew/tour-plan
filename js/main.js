@@ -91,6 +91,7 @@ $(document).ready(function (){
         },
         phone: {
           required: "We need your phone number",
+          minlength: "Your number must be 10 digits",
         },
       },
     });
