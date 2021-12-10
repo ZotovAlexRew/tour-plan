@@ -64,7 +64,7 @@ $(document).ready(function (){
   });
 
   // Обработка форм
-  $(".madel__form").each(function() {
+  $(".model__form").each(function() {
     $(this).validate({
       errorClass: "inval",
       rules: {
@@ -122,6 +122,7 @@ $(document).ready(function (){
         },
         phone: {
           required: "We need your phone number",
+          minlength: "Your number must be 10 digits",
         },
       },
     });
@@ -140,6 +141,7 @@ $(document).ready(function (){
         },
         phone: {
           required: "We need your phone number",
+          minlength: "Your number must be 10 digits",
         },
       },
     });

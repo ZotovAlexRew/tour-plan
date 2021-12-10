@@ -13,6 +13,13 @@
   .card
     width: 230px
     height: 230px
+  .packages
+    &-main
+      width: 630px
+      &__text
+        min-height: 175px
+      &__wrap
+        margin-top: 20px
   .footer
     &__social
       margin-right: 40px
@@ -20,9 +27,36 @@
       &-group
         flex-basis: 100%
     &__additional
-      margin-left: -30px
+      margin-left: -43px
     &__legal
       margin-left: 20px
+  .model
+    &__button
+      width: 100%
+    &__info
+      margin-top: 10px
+      margin-left: 0
+@media ( min-width: 992px )
+  .button
+    &:hover
+      background: darken($primary , 10% )
+  .navbar-menu__link
+    &:hover
+      text-decoration: underline
+      color: darken($white, 15% )
+  .footer__link
+    &:hover
+      text-decoration: underline
+      color: lighten($white,15% )
+  .footer-contact-info
+    &:hover
+      text-decoration: underline
+      color: lighten($white, 15% )
+      cursor: pointer
+  .footer__link--social
+    &:hover
+      background: darken($white, 5% )
+      border-radius: 50%
 @media ( max-width: 992px )
   .container,
   .newsletter-wrapper
@@ -58,6 +92,13 @@
     width: 340px
   .map
     width: 340px
+  .packages
+    &-wrapper
+      grid-template-columns: repeat(2, 1fr)
+    &-main
+      grid-column: span 2
+      grid-row: 1px
+      width: 100%
   .reviews
     padding: 40px 0 60px 0
     &__title
@@ -95,8 +136,9 @@
       grid-template-columns: repeat(6, 1fr)
       grid-row-gap: 30px
     &__input
+      max-width: 255px
       &-group
-        flex-basis: 49%
+        flex-basis: 47%
     &__logo
       grid-row: 1 / 2
       grid-column: span 2
@@ -104,21 +146,28 @@
       height: 120px
     &__social
       &-network
-        margin-left: -50px
+        margin-left: -52px
         grid-row: 1 / 2
         grid-column: span 4
         align-self: center
     &__categories
       grid-row: 2 / 3
       grid-column: span 2
+      margin-top: 12px
     &__legal
       margin-left: 20px
       grid-column: span 2
+      margin-top: 10px
+    &__title
+      &--mb-3
+        margin-top: -25px
     &__additional
       grid-column: span 2
+      margin-top: 10px
     &__contact
       &-deteils
-        margin-top: 21px
+        margin-left: 0
+        margin-top: 50px
         grid-column: span 5
         grid-row: 3
     &__contacts
@@ -126,19 +175,20 @@
         grid-column: span 5
         grid-row: 4
         width: 93%
+        margin-top: 50px
     &__rulses
       &-links
         margin-left: 0
         grid-row: 5
         grid-column: span 4
-        margin-top: 15px
+        margin-top: 30px
         justify-self: start
         padding-left: 6px
       &-image
         grid-row: 5
         grid-column: 5 / 7
         padding-top: 0
-        margin-top: 13px
+        margin-top: 24px
         width: 136px
 @media ( max-width: 767px )
   .container
@@ -150,7 +200,7 @@
     &-menu
       padding: 0
     &--mobile
-      &__fixed
+      &-fixed
         position: fixed
         left: 0
         top: 0
@@ -274,16 +324,16 @@
       &__button
         top: 30px
         &--prev
-          left: 50%
+          left: 45%
           margin-left: -75px
           transform: translate(-50%, 0)
         &--next
-          right: 50%
+          right: 45%
           margin-right: -75px
           transform: translate(50%, 0)
   .activities
     padding-top: 40px
-    padding-bottom: 60px
+    padding-bottom: 40px
     &-title
       font-style: normal
       font-weight: bold
@@ -303,6 +353,43 @@
         width: 161px
       &--4
         width: 200px
+  .packages
+    &-main
+      flex-direction: column
+      &__right
+        padding: 30px 21px 25px 43px
+        width: 100%
+        height: 250px
+        margin-top: -10px
+        border-radius: 0 0 8px 8px
+      &__image
+        width: 100%
+        height: 250px
+        border-radius: 8px 8px 0 0
+      &__title
+        margin-bottom: 11px
+      &__text
+        display: none
+      &__wrap
+        margin: 0 0 15px 0
+      &__price
+        margin-top: 20px
+      &__new
+        margin-top: 0
+        font-size: 20px
+      &__old
+        font-size: 14px
+    &-button
+      padding: 9px 17px
+      font-size: 12px
+    &-price
+      &__new
+        font-size: 18px
+        margin-top: 0
+      &__old
+        font-size: 12px
+    &__img
+      height: 200px
   .footer
     &__input
       &-group
@@ -315,6 +402,10 @@
     &__contacts
       &-form
         margin-top: 30px
+  .model
+    &__dialog
+      width: 90%
+      padding: 36px 50px 33px 50px
 @media ( max-width: 576px )
   .container
     .logo
@@ -325,7 +416,7 @@
       padding-bottom: 28px
   .hotel
     &-decription
-      margin-bottom: 20px
+      margin-bottom: 27px
     &-slider
       height: 180px
     &__slider
@@ -362,6 +453,26 @@
         order: 3
   .card
     width: 100%
+  .packages
+    padding: 5px 0 60px 0
+    &-title
+      font-size: 25px
+      margin-bottom: 30px
+    &-wrapper
+      row-gap: 27px
+    &-main
+      height: 440px
+      &__right
+        padding: 25px 18px 15px 25px
+      &__image
+        height: 200px
+      &__button
+        padding: 8px 18px
+        font-size: 10px
+    &-card
+      grid-column: span 2
+    &__img
+      width: 100%
   .footer
     &-wrapper
       grid-template-columns: repeat(1, minmax(280px, 1fr))

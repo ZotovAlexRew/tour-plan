@@ -10,6 +10,7 @@
     grid-auto-rows: minmax(40px, min-content)
     align-items: start
   &__logo
+    align-self: center
     width: 166px
     grid-row: 1 / 3
   &__categories
@@ -69,6 +70,13 @@
     &-wrapper
       min-width: 40px
       margin-top: 7px
+      &--email
+        width: 20px
+        margin-top: 5px
+        margin-left: 20px
+        margin-right: 6px
+        &--tel
+          width: 40px
   &__text
     color: $footer-text-color
     margin-bottom: 22px
@@ -79,6 +87,15 @@
   &__link
     text-decoration: none
     color: inherit
+  &__links
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    text-decoration: none
+    color: inherit
+  &__li
+    margin: 0
+    padding: 0
   &__input
     width: 100%
     &-group
@@ -102,6 +119,7 @@
     font-size: 12px
     line-height: 15px
     color: #E0E0E0
+    text-decoration: none
   &__rulses
     &-links
       grid-row: 5
