@@ -94,7 +94,8 @@ $(document).ready(function (){
         },
       },
     });
-  })
+  });
+
   $(".footer__form").each(function() {
     $(this).validate({
       errorClass: "inval",
@@ -126,7 +127,8 @@ $(document).ready(function (){
         },
       },
     });
-  })
+  });
+
   $(".form").each(function() {
     $(this).validate({
       errorClass: "invalid",

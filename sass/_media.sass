@@ -49,6 +49,9 @@
   .packages-button
     &:hover
       background: darken($primary , 10% )
+  .comeback
+    &:hover
+      background: darken($primary , 10% )
   .packages-main__button
     &:hover
       background: darken($primary , 10% )
@@ -144,6 +147,7 @@
     &-slider
       &__item
         max-width: 580px
+        padding: 0 62px 30px
   .activities
     padding: 60px 0 50px 0
     &-wrapper
@@ -190,14 +194,14 @@
       margin-top: 10px
     &__title
       &--mb-3
-        margin-top: -25px
+        margin-top: -30px
     &__additional
       grid-column: span 2
       margin-top: 10px
     &__contact
       &-deteils
-        margin-left: 0
-        margin-top: 50px
+        margin-left: 7px
+        margin-top: 58px
         grid-column: span 5
         grid-row: 3
     &__contacts
@@ -346,7 +350,7 @@
       &__text
         text-align: left
       &__item
-        padding: 0 31px 30px
+        padding: 0 29px 30px
         &:after, &:before
           display: none
       &__button
@@ -518,6 +522,7 @@
       margin-top: 20px
     &__text
       margin-top: 29px
+      margin-left: -1px
     &__item
       &--mb-2
         margin-bottom: 14px
@@ -614,19 +619,27 @@
     padding-bottom: 0
     &-wrapper
       grid-template-columns: minmax(280px, max-content)
+    &__social
+      &-network
+        margin-top: 5px
+    &__additional
+      margin-top: -6px
     &__link
       margin-left: 0
-      margin-top: 3px
+      &--social
+        margin-top: 5px
     &__links
       &--email
-        margin-top: 15px
+        margin-top: 10px
     &__icon
       &-wrapper
         min-width: 27px
-        margin-top: -1px
-        &--1
+        margin-top: 13px
+        &--geo
+          margin-top: -3px
+        &--tel
           margin-top: 10px
-        &--2
+        &--email
           margin-top: 15px
     &-span
       margin-top: -5px
